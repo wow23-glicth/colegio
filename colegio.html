@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Profiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: skyblue;
+      color: #2c3e50;
+    }
+
+    /* Header */
+    header.page-header {
+      background-color: lightblue;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .page-header h1 {
+      font-size: 2.2em;
+      font-weight: 600;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .page-header p {
+      font-size: 1em;
+      color: #6b7280;
+      margin-top: 10px;
+    }
+
+    /* Grid */
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Cards */
+    .profile-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile-header {
+      height: 180px;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      padding: 24px 20px 16px;
+      text-align: center;
+    }
+
+    .profile-name {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin: 10px 0 6px;
+    }
+
+    .profile-title {
+      font-size: 0.95em;
+      color: #6b7b8c;
+    }
+
+    .profile-actions {
+      display: flex;
+      justify-content: center;
+      padding: 16px 20px 20px;
+      gap: 12px;
+      border-top: 1px solid #eee;
+    }
+
+    .profile-button {
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .primary-button {
+      background-color: #4f46e5;
+      color: #fff;
+      border: none;
+    }
+
+    .primary-button:hover {
+      background-color: #4338ca;
+    }
+
+    .secondary-button {
+      background-color: #f0f0f0;
+      color: #333;
+      border: none;
+    }
+
+    .secondary-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    @media (max-width: 500px) {
+      .profile-actions {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>COLEGIO</h1>
+    <p>MAIN MEMBERs</p>
+  </header>
+
+  <!-- Profiles -->
+  <div class="profile-grid">
+    <!-- Profile 1 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="aoli.jpg" alt="AOLI WU" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">AOLI WU</h3>
+        <p class="profile-title">AB-POLSCI</p>
+      </div>
+      <div class="profile-actions">
+         <a href="https://www.facebook.com/jahvsekolohiya" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Contact</button>
+      </div>
+    </article>
+
+    <!-- Profile 2 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="hell.jpg" alt="HELLIEAR" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">HELLIEAR</h3>
+        <p class="profile-title">BEED</p>
+      </div>
+      <div class="profile-actions">
+        <a href="https://www.facebook.com/helliare" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Message</button>
+      </div>
+    </article>
+
+    <!-- Profile 3 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="hum.jpg" alt="HUMBLE ZENO" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">HUMBLE ZENO</h3>
+        <p class="profile-title">BSIT</p>
+      </div>
+      <div class="profile-actions">
+       <a href="https://www.facebook.com/humble.zeno" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Follow</button>
+      </div>
+    </article>
+
+    <!-- Profile 4 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="tofu.jpg" alt="ZELESQA TOFU" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">ZELESQA TOFU</h3>
+        <p class="profile-title">BSIT</p>
+      </div>
+      <div class="profile-actions">
+        <a href="https://www.facebook.com/profile.php?id=61553528786340" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Connect</button>
+      </div>
+    </article>
+
+    <!-- Profile 5 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="keanu.jpg" alt="Michael Lee" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">JZYLAX DRICO</h3>
+        <p class="profile-title">BSA</p>
+      </div>
+      <div class="profile-actions">
+       <a href="https://www.facebook.com/keanuyxz" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Contact</button>
+      </div>
+    </article>
+
+    <!-- Profile 6 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="keina.jpg" alt="Sofia Khan" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">KEINA SOLSTICE</h3>
+        <p class="profile-title">BSA</p>
+      </div>
+      <div class="profile-actions">
+        <a href="https://www.facebook.com/profile.php?id=100078506696764" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Email</button>
+      </div>
+    </article>
+
+    <!-- Profile 7 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="drugo.jpg" alt="Daniel Kim" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">DRUGO SITANO</h3>
+        <p class="profile-title">BSN</p>
+      </div>
+      <div class="profile-actions">
+        <a href="https://www.facebook.com/profile.php?id=61554982520008" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Ping</button>
+      </div>
+    </article>
+
+    <!-- Profile 8 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="zahe.jpg" alt="Emma Wilson" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">Zaheer Marauder</h3>
+        <p class="profile-title">BSIS</p>
+      </div>
+      <div class="profile-actions">
+        <a href="https://www.facebook.com/hotarou.sky" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Message</button>
+      </div>
+    </article>
+
+    <!-- Profile 9 -->
+    <article class="profile-card">
+      <div class="profile-header">
+        <img src="sev.jpg" alt="Carlos Alvarez" class="profile-image" />
+      </div>
+      <div class="profile-info">
+        <h3 class="profile-name">SEVEONE</h3>
+        <p class="profile-title">BSHM</p>
+      </div>
+      <div class="profile-actions">
+        <a href="https://www.facebook.com/iamseveone" class="profile-button primary-button" target="_blank">View Profile</a>
+        <button class="profile-button secondary-button">Sync</button>
+      </div>
+    </article>
+</body>
+</html>
